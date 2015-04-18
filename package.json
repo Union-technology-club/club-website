@@ -1,0 +1,25 @@
+{
+  "name": "club-website",
+  "version": "1.0.0",
+  "description": "Node.js implementation of the club website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/UnionCollege/club-website.git"
+  },
+  "author": "keawade",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/UnionCollege/club-website/issues"
+  },
+  "homepage": "https://github.com/UnionCollege/club-website",
+  "dependencies": {
+    "body-parser": "^1.12.3",
+    "express": "^4.12.3",
+    "hbs": "^3.0.1",
+    "hbs-utils": "0.0.3"
+  }
+}
