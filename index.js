@@ -33,7 +33,7 @@ app.get('/', function(req,res,next){
 
 app.get('/calendar', function(req,res,next){
     res.render('calendar', {
-        layout: (req.query.partial) ? false : "layout"
+        layout: false
     });
 });
 
