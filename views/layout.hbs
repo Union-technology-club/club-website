@@ -1,26 +1,29 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/styles/font-awesome.min.css">
-        <link rel="stylesheet" href="/styles/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/pure/0.6.0/pure-min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/layouts/side-menu.css">
+        <link rel="stylesheet" href="/css/default.css">
         <link rel="icon" type="image/ico" href="/images/favicon.ico">
-        <title>TTC | {{title}}</title>
+        <title>{{title}}</title>
     </head>
     <body>
-        {{> header}}
+        <div id="layout">
+            {{> sidebar}}
 
-        {{#if error}}
-            {{> notice}}
-        {{/if}}
+            <div id="main">
+                {{#if error}}
+                    {{> notice}}
+                {{/if}}
 
-        <div class="container">
-            {{{body}}}
+                {{{body}}}
+
+                {{> footer}}
+            </div>
         </div>
 
-        {{> footer}}
-
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script src="/js/ui.js"></script>
     </body>
 </html>

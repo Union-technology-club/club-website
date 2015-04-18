@@ -27,7 +27,7 @@ app.use(bodyParser.urlencoded({
 
 app.get('/', function(req,res,next){
     res.render('index', {
-        title: 'home'
+        title: 'Tech & Tabletop Community'
     })
 });
 
