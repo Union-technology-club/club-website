@@ -1,17 +1,43 @@
+.ttc-header {
+    background-color: #27556C;
+    padding-bottom: 0.25em;
+    border: none;
+}
+
+#menu .pure-menu-selected, #menu .pure-menu-heading {
+    background-color: #467286;
+}
+
+.header h2 {
+    color: #6E91A1;
+}
+
+.header h1 {
+    color: white;
+}
+
 .ttc-center {
     text-align: center;
 }
 
+.ttc-icons {
+    display: inline-block;
+    letter-spacing: 0em;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
 .ttc-code {
-    color: #B41D1D;
+    padding: 0.27em 0.27em 0;
 }
 
 .ttc-users {
-    color: #4580B8;
+    padding: 0.27em 0.27em 0;
 }
 
 .ttc-trophy {
-    color: #C2B62A;
+    padding: 0.27em 0.27em 0;
 }
 
 .ttc-cal-wrap {
@@ -41,4 +67,49 @@
 
 .fa-10x {
     font-size: 10em;
+}
+
+p, a {
+    color: white;
+}
+
+.ttc-font {
+    color: white;
+}
+
+.pure-form input:focus:invalid, .pure-form textarea:focus:invalid, .pure-form select:focus:invalid {
+    border-color: #D4A36A;
+    color: #AA7539;
+}
+
+.ttc-events {
+    padding: 0.25em;
+    background-color: #28794C;
+}
+
+.ttc-events .content-subhead {
+    color: #79B694;
+}
+
+.ttc-icon {
+    padding: 0.25em;
+    background-color: #28794C;
+}
+
+.ttc-sponsors {
+    padding: 0.25em;
+    background-color: #313975;
+}
+
+.ttc-sponsors .content-subhead {
+    color: #7D83B0;
+}
+
+.ttc-contact {
+    padding: 0.25em;
+    background-color: #27556C;
+}
+
+.ttc-contact .content-subhead {
+    color: #6E91A1;
 }

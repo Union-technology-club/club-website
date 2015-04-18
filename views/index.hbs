@@ -1,57 +1,42 @@
-<div class="header">
+<div class="header ttc-header">
     <h1>{{title}}</h1>
     <h2>Union College, Lincoln Nebraska</h2>
 </div>
 
-<div class="content">
-    <h1 id="about" class="content-subhead">About</h1>
-    <p>To use this layout, you can just copy paste the HTML, along with the CSS in <a href="/css/layouts/side-menu.css" alt="Side Menu CSS">side-menu.css</a>, and the JavaScript in <a href="/js/ui.js">ui.js</a>. The JS file uses vanilla JavaScript to simply toggle an <code>active</code> class that makes the menu responsive.</p>
-
-    <div class="pure-g">
-        <div class="pure-u-1-3 ttc-center">
-            <span class="fa fa-code fa-10x ttc-code"></span>
-        </div>
-        <div class="pure-u-1-3 ttc-center">
-            <span class="fa fa-users fa-10x ttc-users"></span>
-        </div>
-        <div class="pure-u-1-3 ttc-center">
-            <span class="fa fa-trophy fa-10x ttc-trophy">
-        </div>
-    </div>
-
-    <div class="pure-g">
-        <div class="pure-u-1-3 ttc-center">
-            <h2>coders</h2>
-        </div>
-        <div class="pure-u-1-3 ttc-center">
-            <h2>community<h2/>
-        </div>
-        <div class="pure-u-1-3 ttc-center">
-            <h2>gamers</h2>
-        </div>
-    </div>
-
-    <h1 id="events" class="content-subhead">Events</h1>
-    <div class="ttc-cal-wrap">
-        <div class="ttc-cal-iframe">
-            <img class="ratio" src="http://placehold.it/16x9"/>
-            <iframe src="/calendar" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </div>
-
-    <h1 id="contact" class="content-subhead">Contact Us</h1>
-    <p>Got an idea to improve our community? Drop us a line below.</p>
-    <form class="pure-form pure-form-aligned">
-        <fieldset>
-            <div class="pure-control-group">
-                <label for="email">E-mail Address: </label>
-                <input name="email" class="pure-input " placeholder="e-mail" required="" type="text">
+<div class="ttc-events">
+    <div class="content">
+        <h1 id="events" class="content-subhead">Events</h1>
+        <div class="ttc-cal-wrap">
+            <div class="ttc-cal-iframe">
+                <img class="ratio" src="http://placehold.it/16x9"/>
+                <iframe src="/calendar" frameborder="0" allowfullscreen></iframe>
             </div>
-            <div class="pure-control-group">
-                <label for="message">Message: </label>
-                <textarea name="message" type="textbox" class="pure-input pure-input-2-3" style="width: 77%;" placeholder="Tell us what you think. Should we be more awesome, think we are trying too hard?" required=""></textarea>
-            </div>
-            <button type="submit" class="pure-button submit" disabled="">Hit Us Up</button>
-        </fieldset>
-    </form>
+        </div>
+    </div>
+</div>
+
+<div class="ttc-sponsors">
+    <div class="content">
+        <h1 id="sponsors" class="content-subhead">Sponsors</h1>
+    </div>
+</div>
+
+<div class="ttc-contact">
+    <div class="content">
+        <h1 id="contact" class="content-subhead">Contact Us</h1>
+        <p>Got an idea to improve our community? Drop us a line below.</p>
+        <form class="pure-form pure-form-aligned">
+            <fieldset>
+                <div class="pure-control-group">
+                    <label class="ttc-font" for="email">E-mail Address: </label>
+                    <input name="email" class="pure-input " placeholder="e-mail" required="" type="text">
+                </div>
+                <div class="pure-control-group">
+                    <label class="ttc-font" for="message">Message: </label>
+                    <textarea name="message" type="textbox" class="pure-input pure-input-2-3" style="width: 77%;" placeholder="Tell us what you think. Should we be more awesome, think we are trying too hard?" required=""></textarea>
+                </div>
+                <button type="submit" class="pure-button submit" disabled="">Hit Us Up</button>
+            </fieldset>
+        </form>
+    </div>
 </div>
