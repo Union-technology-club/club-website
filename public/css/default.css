@@ -2,8 +2,41 @@
     text-align: center;
 }
 
-.ttc-main-iframe {
-    
+.ttc-code {
+    color: #B41D1D;
+}
+
+.ttc-users {
+    color: #4580B8;
+}
+
+.ttc-trophy {
+    color: #C2B62A;
+}
+
+.ttc-cal-wrap {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background: #CCC;
+}
+
+.ttc-cal-iframe {
+    position: relative;
+}
+
+.ttc-cal-iframe .ratio {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.ttc-cal-iframe iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .fa-10x {
