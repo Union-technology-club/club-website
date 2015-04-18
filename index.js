@@ -31,6 +31,12 @@ app.get('/', function(req,res,next){
     })
 });
 
+app.get('/calendar', function(req,res,next){
+    res.render('calendar', {
+        layout: (req.query.partial) ? false : "layout"
+    });
+});
+
 var server = app.listen(app.get('port'), app.get('ip'), function() {
     var address = server.address();
     console.log('[ttc] app running on http://%s:%s', address.address, address.port);
