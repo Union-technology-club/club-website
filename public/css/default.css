@@ -20,7 +20,7 @@
     text-align: center;
 }
 
-.ttc-icons {
+.ttc-icons, .ttc-icons a {
     display: inline-block;
     letter-spacing: 0em;
     margin-left: auto;
@@ -29,15 +29,20 @@
 }
 
 .ttc-code {
-    padding: 0.27em 0.27em 0;
+    padding: 1em 1em 0;
 }
 
 .ttc-users {
-    padding: 0.27em 0.27em 0;
+    padding: 1em 1em 0;
 }
 
 .ttc-trophy {
-    padding: 0.27em 0.27em 0;
+    padding: 1em 1em 0;
+}
+
+.ttc-contact-icons {
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 .ttc-cal-wrap {
@@ -69,12 +74,12 @@
     font-size: 10em;
 }
 
-p, a {
-    color: white;
+.ttc-contact-font {
+    color: #6E91A1;
 }
 
-.ttc-font {
-    color: white;
+.ttc-event-font {
+    color: #79B694;
 }
 
 .pure-form input:focus:invalid, .pure-form textarea:focus:invalid, .pure-form select:focus:invalid {
@@ -112,4 +117,8 @@ p, a {
 
 .ttc-contact .content-subhead {
     color: #6E91A1;
+}
+
+.ttc-eventlist {
+    display: block;
 }
