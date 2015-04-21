@@ -75,11 +75,11 @@
 }
 
 .ttc-contact-font {
-    color: #6E91A1;
+    color: white;
 }
 
 .ttc-event-font {
-    color: #79B694;
+    color: white;
 }
 
 .pure-form input:focus:invalid, .pure-form textarea:focus:invalid, .pure-form select:focus:invalid {
@@ -93,7 +93,7 @@
 }
 
 .ttc-events .content-subhead {
-    color: #79B694;
+    color: white;
 }
 
 .ttc-icon {
@@ -107,7 +107,7 @@
 }
 
 .ttc-sponsors .content-subhead {
-    color: #7D83B0;
+    color: white;
 }
 
 .ttc-contact {
@@ -117,8 +117,9 @@
 
 .ttc-contact .content-subhead {
     color: #6E91A1;
+    color: white;
 }
 
-.ttc-eventlist {
-    display: block;
+.ttc-event-details {
+    color: white;
 }

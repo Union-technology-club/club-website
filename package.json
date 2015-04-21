@@ -19,7 +19,9 @@
   "dependencies": {
     "body-parser": "^1.12.3",
     "express": "^4.12.3",
+    "googleapis": "^2.0.2",
     "hbs": "^3.0.1",
-    "hbs-utils": "0.0.3"
+    "hbs-utils": "0.0.3",
+    "moment": "^2.10.2"
   }
 }
