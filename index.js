@@ -16,7 +16,7 @@ app.engine('html', hbs.__express);
 
 // Set server ip and port
 app.set('port', process.env.PORT || 3000);
-app.set('ip', process.env.IP || '10.6.143.108');
+app.set('ip', process.env.IP || '0.0.0.0');
 
 // Set root directory.
 app.use(express.static('public'));
