@@ -23,7 +23,17 @@
                 {{> footer}}
             </div>
         </div>
-
+        
+        <script src="js/bind-polyfill.js"></script>
+        <script src="js/smooth-scroll.js"></script>
+        <script>
+            smoothScroll.init({
+                speed: 750,
+                easing: 'easeInOutCubic',
+                updateURL: false,
+                offset: 50
+            });
+        </script>
         <script src="/js/ui.js"></script>
     </body>
 </html>

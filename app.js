@@ -3,7 +3,7 @@ var googleConfig = {
   clientID: '466130753343-2o7t5i8gpp79ue316o2gdgkib6j600pv.apps.googleusercontent.com',
   clientSecret: '6HFbWIX5rxpPxcdlEy-tT3w1',
   calendarId: 'uctechtabletop@gmail.com',
-  redirectURL: 'https://10.6.143.108:2002/auth'
+  redirectURL: 'http://localhost:2002/auth'
 };
 
 // Dependency setup
