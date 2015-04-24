@@ -2,6 +2,9 @@ var express = require('express');
 var hbs = require('hbs');
 var hbsutils = require('hbs-utils')(hbs);
 var bodyParser = require('body-parser');
+var nodemailer = require('nodemailer');
+
+var gmailauth = require('./auth.js');
 
 // Initialize our express application
 var app = express();
@@ -24,6 +27,19 @@ app.use(express.static('public'));
 app.use(bodyParser.urlencoded({
     extended: false
 }));
+
+var transporter = nodemailer.createTransport({
+    service: 'Gmail',
+    auth: gmailauth
+});
+
+/*
+var mailOptions = {
+    from: 'Union TTC <uctechtabletop@gmail.com>',
+    to: 'uctechtabletop@gmail.com, keawade@gmail.com',
+    subject: 'Feedback from website'
+};
+*/
 
 app.get('/', function(req,res,next){
     res.render('index', {
