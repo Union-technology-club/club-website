@@ -2,8 +2,6 @@ var express = require('express');
 var hbs = require('hbs');
 var hbsutils = require('hbs-utils')(hbs);
 var bodyParser = require('body-parser');
-var gcal = require('google-calendar');
-//var google_calendar = new gcal.GoogleCalendar(accessToken);
 
 // Initialize our express application
 var app = express();
