@@ -2,8 +2,11 @@ var express = require('express');
 var hbs = require('hbs');
 var hbsutils = require('hbs-utils')(hbs);
 var bodyParser = require('body-parser');
+var google = require('googleapis');
 var nodemailer = require('nodemailer');
 
+var OAuth2 = google.auth.OAuth2;
+//var oauth2Client = new OAuth2(
 var gmailauth = require('./auth.js');
 
 // Initialize our express application
@@ -33,6 +36,8 @@ var transporter = nodemailer.createTransport({
     auth: gmailauth
 });
 
+//google.
+
 /*
 var mailOptions = {
     from: 'Union TTC <uctechtabletop@gmail.com>',
@@ -43,7 +48,7 @@ var mailOptions = {
 
 app.get('/', function(req,res,next){
     res.render('index', {
-        title: 'Tech & Tabletop Community'
+        title: 'Tech & Tabletop Club'
     })
 });
 
