@@ -1,124 +1,102 @@
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-table, caption, tbody, tfoot, thead, tr, th, td {
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, table, caption, tbody, tfoot, thead, tr, th, td {
   margin: 0;
   padding: 0;
   border: 0;
 }
-
 .ttc-header {
-    background-color: #27556C;
-    padding-bottom: 0.25em;
-    border: none;
+  background-color: #27556C;
+  padding-bottom: 0.25em;
+  border: none;
 }
-
 #menu .pure-menu-selected, #menu .pure-menu-heading {
-    background-color: #467286;
+  background-color: #467286;
 }
-
 .header h2 {
-    color: #6E91A1;
+  color: #6E91A1;
 }
-
 .header h1 {
-    color: white;
+  color: white;
 }
-
 .ttc-center {
-    text-align: center;
+  text-align: center;
 }
-
 .ttc-icons, .ttc-icons a {
-    display: inline-block;
-    letter-spacing: 0em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    color: white;
+  display: inline-block;
+  letter-spacing: 0em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  color: white;
 }
-
 .ttc-code {
-    padding: 1em 1em 0;
+  padding: 1em 1em 0;
 }
-
 .ttc-users {
-    padding: 1em 1em 0;
+  padding: 1em 1em 0;
 }
-
 .ttc-trophy {
-    padding: 1em 1em 0;
+  padding: 1em 1em 0;
 }
-
 .ttc-contact-icons {
-    padding-left: 2em;
-    padding-right: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
 }
-
 .fa-10x {
-    font-size: 10em;
+  font-size: 10em;
 }
-
 .ttc-contact-font {
-    color: white;
+  color: white;
 }
-
 .ttc-event-font {
-    color: white;
+  color: white;
 }
-
 .pure-form input:focus:invalid, .pure-form textarea:focus:invalid, .pure-form select:focus:invalid {
-    border-color: #D4A36A;
-    color: #AA7539;
+  border-color: #D4A36A;
+  color: #AA7539;
 }
-
 .ttc-events {
-    padding: 0.25em;
-    background-color: #28794C;
+  padding: 0.25em;
+  background-color: #28794C;
 }
-
 .content-subhead {
-    color: white;
+  color: white;
 }
-
 h2.content-subhead {
-    margin: 30px 0px 20px;
+  margin: 30px 0px 20px;
 }
-
 .ttc-icon {
-    padding: 0.25em;
-    background-color: #28794C;
+  padding: 0.25em;
+  background-color: #28794C;
 }
-
 .ttc-sponsors {
-    padding: 0.25em;
-    background-color: #313975;
+  padding: 0.25em;
+  background-color: #313975;
 }
-
 .ttc-contact {
-    padding: 0.25em;
-    background-color: #27556C;
+  padding: 0.25em;
+  background-color: #27556C;
 }
-
 .ttc-event-details {
-    color: white;
+  color: white;
 }
-
 .ttc-map-container {
-    position: relative;
-    height: 0;
-    overflow: hidden;
-    padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
 }
-
 .ttc-map-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
-
 .ttc-textbox {
-    width: 100%;
-    box-sizing: border-box;
+  width: 100%;
+  box-sizing: border-box;
+}
+.ttc-header-link {
+  color: white;
+  text-decoration: none;
 }

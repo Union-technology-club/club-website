@@ -7,7 +7,7 @@ var nodemailer = require('nodemailer');
 
 var OAuth2 = google.auth.OAuth2;
 //var oauth2Client = new OAuth2(
-var gmailauth = require('./auth.js');
+//var gmailauth = require('./auth.js');
 
 // Initialize our express application
 var app = express();
@@ -30,12 +30,12 @@ app.use(express.static('public'));
 app.use(bodyParser.urlencoded({
     extended: false
 }));
-
+/*
 var transporter = nodemailer.createTransport({
     service: 'Gmail',
     auth: gmailauth
 });
-
+*/
 //google.
 
 /*
