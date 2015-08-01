@@ -1,40 +1,43 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="//yui.yahooapis.com/pure/0.6.0/pure-min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/css/layouts/side-menu.css">
-        <link rel="stylesheet" href="/css/default.css">
-        <link rel="icon" type="image/png" href="/images/ttc-favicon.png">
-        <title>{{title}}</title>
-    </head>
-    <body>
-        <div id="layout">
-            {{> sidebar}}
 
-            <div id="main">
-                {{#if error}}
-                    {{> notice}}
-                {{/if}}
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="//yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <link rel="stylesheet" href="/css/default.css">
+  <link rel="icon" type="image/png" href="/images/ttc-favicon.png">
+  <title>{{title}}</title>
+</head>
 
-                {{{body}}}
+<body>
+  <div id="layout">
+    {{> sidebar}}
 
-                {{> footer}}
-            </div>
-        </div>
+    <div id="main">
+      {{#if error}}
+        {{> notice}}
+      {{/if}}
 
-        <script src="js/bind-polyfill.js"></script>
-        <script src="js/smooth-scroll.js"></script>
-        <script>
-            smoothScroll.init({
-                speed: 750,
-                easing: 'easeInOutCubic',
-                updateURL: false,
-                offset: 50
-            });
-        </script>
-        <script src="/js/ui.js"></script>
-    </body>
+      {{{body}}}
+
+      {{> footer}}
+    </div>
+  </div>
+
+  <script src="js/bind-polyfill.js"></script>
+  <script src="js/smooth-scroll.js"></script>
+  <script>
+    smoothScroll.init({
+      speed: 750,
+      easing: 'easeInOutCubic',
+      updateURL: false,
+      offset: 50
+    });
+  </script>
+  <script src="/js/ui.js"></script>
+</body>
+
 </html>
