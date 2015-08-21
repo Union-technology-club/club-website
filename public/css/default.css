@@ -35,10 +35,11 @@ h2.content-subhead {
   letter-spacing: 0em;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
+  margin-top: 5px;
   color: white;
   padding-left: 1em;
   padding-right: 1em;
+  vertical-align: middle;
 }
 .fa-10x {
   font-size: 10em;
