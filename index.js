@@ -4,6 +4,7 @@ var hbsutils = require('hbs-utils')(hbs);
 var bodyParser = require('body-parser');
 var google = require('googleapis');
 var nodemailer = require('nodemailer');
+var gmailauth = require('./auth.json');
 
 var OAuth2 = google.auth.OAuth2;
 //var oauth2Client = new OAuth2(
@@ -32,13 +33,8 @@ app.use(bodyParser.urlencoded({
 }));
 var transporter = nodemailer.createTransport({
     service: 'Gmail',
-    auth: {
-      user: 'nathan.bland@gmail.com',//Personally I'ds say fill this in server
-                                    // side, not in source control.
-      pass: 'pitjyiprbhckepxb'// This app password is now void. Just an example.
-    }
+    auth: gmailauth
 });
-//google.
 
 app.get('/', function(req,res,next){
     res.render('index', {
@@ -48,8 +44,8 @@ app.get('/', function(req,res,next){
 app.post('/email', function(req,res,next){
   console.log(req.body);
   var mailOptions = {
-      from: 'Nathan Bland <nathan.bland@gmail.com>',
-      to: 'nathan.bland@gmail.com',
+      from: 'UnionTTC <uctechtabletop@gmail.com>',
+      to: 'uctechtabletop@gmail.com',
       subject: 'Feedback from website',
       html: '<ul>'+
               '<li>From: '+req.body.email+'</li>'+
