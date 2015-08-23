@@ -37,12 +37,8 @@ h2.content-subhead {
 .ttc-icons, .ttc-icons a {
   display: inline-block;
   letter-spacing: 0em;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5px;
+  margin-top: 1.5em;
   color: white;
-  padding-left: 1em;
-  padding-right: 1em;
   vertical-align: middle;
 }
 .fa-10x {
