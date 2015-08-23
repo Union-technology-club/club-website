@@ -30,27 +30,42 @@ app.use(express.static('public'));
 app.use(bodyParser.urlencoded({
     extended: false
 }));
-/*
 var transporter = nodemailer.createTransport({
     service: 'Gmail',
-    auth: gmailauth
+    auth: {
+      user: 'nathan.bland@gmail.com',//Personally I'ds say fill this in server
+                                    // side, not in source control.
+      pass: 'pitjyiprbhckepxb'// This app password is now void. Just an example.
+    }
 });
-*/
 //google.
-
-/*
-var mailOptions = {
-    from: 'Union TTC <uctechtabletop@gmail.com>',
-    to: 'uctechtabletop@gmail.com, keawade@gmail.com',
-    subject: 'Feedback from website'
-};
-*/
 
 app.get('/', function(req,res,next){
     res.render('index', {
         title: 'Tech & Tabletop Club'
     })
 });
+app.post('/email', function(req,res,next){
+  console.log(req.body);
+  var mailOptions = {
+      from: 'Nathan Bland <nathan.bland@gmail.com>',
+      to: 'nathan.bland@gmail.com',
+      subject: 'Feedback from website',
+      html: '<ul>'+
+              '<li>From: '+req.body.email+'</li>'+
+              '<li>Message: '+req.body.message+'</li>'+
+            '</ul>'
+  };
+  transporter.sendMail(mailOptions, function(error, info){
+    if(error){
+      return console.log(error);
+    }
+    console.log('Message sent: ' + info.response);
+    //If you felt like it, you could do fancy renders here, or a thank
+    //you page or something.
+    res.redirect('/');
+  });
+})
 
 var server = app.listen(app.get('port'), app.get('ip'), function() {
     var address = server.address();
