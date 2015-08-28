@@ -4,7 +4,10 @@ var Order = require("../models/Order");
 var async = require("async");
 var route = module.exports = express.Router();
 route.get("/", function (req, res, next) {
-	return res.render("libray", {});
+	Game.find({}, function (err, games) {
+		if (err) return res.sendStatus(500);
+		return res.render("library", { games: games, title: "Library" });
+	});
 });
 route.post("/checkout", function (req, res, next) {
 	var body = req.body;
@@ -17,13 +20,13 @@ route.post("/checkout", function (req, res, next) {
 					game.save(callback);
 				},
 				order: function (callback) {
-					var o = new Order({User: 'TODO', Game: game});
+					var o = new Order({ User: 'TODO', Game: game });
 					o.save(callback);
-				}, function(err, results){
-					if(err) return res.json({Status: 'fail', err: err});
-					return res.json({Status: "success", result: results});
 				}
-			})
+			}, function (err, results) {
+				if (err) return res.json({ Status: 'fail', err: err });
+				return res.json({ Status: "success", result: results });
+			});
 		} else {
 			return res.json({ Status: "fail", err: "No copies available" });
 		}

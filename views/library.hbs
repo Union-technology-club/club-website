@@ -1,4 +1,23 @@
 <div id="top" class="header ttc-header">
   <h1>{{title}}</h1>
-  <h2>Union College, Lincoln Nebraska</h2>
+</div>
+
+<div>
+  {{#each games}}
+    <div>
+      <img src="{{Thumbnail}}" />
+      <div>{{Name}}</div>
+      <div> Min Players: {{MinPlayers}}</div>
+      <div> Max Players: {{MaxPlayers}}</div>
+      <div> Recommended Amount: {{RecommendedPlayer}}</div>
+      <div> Playtime: {{PlayTime}} </div>
+      <a href="//boardgamegeek.com/boardgame/{{BoardGameGeekID}}">BoardGameGeek page</a>
+      <div> Quantity Owned: {{Quantity}} </div>
+      <div> Amount Available to Borrow: {{Available}} </div>
+      <form action="/library/checkout" method="post">
+        <input type="hidden" value="{{_id}}" />
+        <input type="submit" value="Borrow" />
+      </form>
+    </div>
+  {{/each}}  
 </div>

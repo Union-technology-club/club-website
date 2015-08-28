@@ -5,6 +5,7 @@ var bodyParser = require('body-parser');
 var google = require('googleapis');
 var nodemailer = require('nodemailer');
 var gmailauth = require('./auth.json');
+var mongoose = require('mongoose');
 
 var OAuth2 = google.auth.OAuth2;
 //var oauth2Client = new OAuth2(
@@ -31,6 +32,12 @@ app.use(express.static('public'));
 app.use(bodyParser.urlencoded({
     extended: false
 }));
+
+//Connect mongoose to mongodb
+app.set('host', process.env.IP || 'localhost');
+app.set('name', 'TTC');
+mongoose.connect('mongodb://' + app.get('host') + '/' + app.get('name'));
+
 var transporter = nodemailer.createTransport({
     service: 'Gmail',
     auth: gmailauth
