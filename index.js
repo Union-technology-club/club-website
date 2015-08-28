@@ -61,7 +61,9 @@ app.post('/email', function(req,res,next){
     //you page or something.
     res.redirect('/');
   });
-})
+});
+
+app.use("/library", require('./routes/library'))
 
 var server = app.listen(app.get('port'), app.get('ip'), function() {
     var address = server.address();
