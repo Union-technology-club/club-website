@@ -75,6 +75,21 @@ h2.content-subhead {
   width: 100%;
   height: 100%;
 }
+.ttc-officer {
+  padding: 0.25em;
+  background-color: #27556C;
+}
+.ttc-officer-font {
+  color: white;
+}
+.ttc-officer-details {
+  color: white;
+  padding-bottom: .75em;
+}
+.ttc-officer-heading {
+  font-weight: 400;
+  padding-bottom: .25em;
+}
 .ttc-contact {
   padding: 0.25em;
   background-color: #27556C;
