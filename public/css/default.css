@@ -1,4 +1,5 @@
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, table, caption, tbody, tfoot, thead, tr, th, td {
+  font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
   border: 0;
@@ -78,6 +79,7 @@ h2.content-subhead {
 .ttc-officer {
   padding: 0.25em;
   background-color: #27556C;
+  font-family: "Open Sans", sans-serif;
 }
 .ttc-officer-font {
   color: white;
@@ -87,7 +89,7 @@ h2.content-subhead {
   padding-bottom: .75em;
 }
 .ttc-officer-heading {
-  font-weight: 400;
+  font-weight: 300;
   padding-bottom: .25em;
 }
 .ttc-contact {
