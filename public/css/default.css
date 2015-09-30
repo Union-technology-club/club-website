@@ -5,6 +5,14 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
   border: 0;
   color: white;
 }
+.content {
+   margin-left: auto;
+   margin-right: auto;
+   padding-top: 4em;
+   padding-left: 1em;
+   padding-right: 1em;
+   max-width: 768px;
+}
 html {
   background-color: #27556c;
 }
@@ -19,14 +27,43 @@ header h2 {
   font-weight: 300;
   font-size: 1.5em;
 }
+.content a{
+  color:white;
+  /* First we need to help some browsers along for this to work.
+     Just because a vendor prefix is there, doesn't mean it will
+     work in a browser made by that vendor either, it's just for
+     future-proofing purposes I guess. */
+  -o-transition:.25s;
+  -ms-transition:.25s;
+  -moz-transition:.25s;
+  -webkit-transition:.25s;
+  /* ...and now for the proper property */
+  transition:.25s;
+}
+.content a:hover{
+  color: #FFBCAA;
+}
 .ttc-section-wrap {
   margin: 0;
   padding: 0;
   padding-bottom: 1em;
 }
+.ttc-section-wrap iframe {
+  width: 100%;
+  height: 100%;
+}
 .ttc-h1 {
   font-weight: 300;
   font-size: 1.75em;
+  padding-bottom: .25em
+}
+.ttc-h2 {
+  font-weight: 300;
+  font-size: 1.5em;
+}
+.ttc-h3 {
+  font-weight: 300;
+  font-size: 1em;
 }
 .ttc-footer-icon {
   position: relative;

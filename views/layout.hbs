@@ -1,51 +1,51 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Font from Google -->
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
+    <!-- Font from Google -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
 
-        <!-- Pure CSS from Yahoo -->
-        <link rel="stylesheet" href="//cdn.jsdelivr.net/pure/0.6.0/base-min.css">
-        <link rel="stylesheet" href="//cdn.jsdelivr.net/pure/0.6.0/grids-min.css">
-        <link rel="stylesheet" href="//cdn.jsdelivr.net/pure/0.6.0/grids-responsive-min.css">
+    <!-- Pure CSS from Yahoo -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/pure/0.6.0/base-min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/pure/0.6.0/grids-min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/pure/0.6.0/grids-responsive-min.css">
 
-        <!-- Customized menu CSS -->
-        <!-- Original source: http://tympanus.net/Tutorials/AnimatedBorderMenus/index5.html -->
-        <link rel="stylesheet" type="text/css" href="css/menu.css" />
+    <!-- Customized menu CSS -->
+    <!-- Original source: http://tympanus.net/Tutorials/AnimatedBorderMenus/index5.html -->
+    <link rel="stylesheet" type="text/css" href="css/menu.css" />
 
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/default.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/default.css">
 
-        <link rel="icon" type="image/png" href="/images/ttc-favicon.png">
-        <title>{{title}}</title>
-    </head>
-    <body>
-        <div class="container">
-            {{> header}}
+    <link rel="icon" type="image/png" href="/images/ttc-favicon.png">
+    <title>{{title}}</title>
+  </head>
+  <body>
+    <div class="content">
+      {{> header}}
 
-            {{#if error}}
-                {{> notice}}
-            {{/if}}
+      {{#if error}}
+          {{> notice}}
+      {{/if}}
 
-            {{{body}}}
+      {{{body}}}
 
-            {{> navigation}}
-        </div>
+      {{> navigation}}
+    </div>
 
-        <script src="js/bind-polyfill.js"></script>
-        <script src="js/smooth-scroll.js"></script>
-        <script>
-            smoothScroll.init({
-                speed: 750,
-                easing: 'easeInOutCubic',
-                updateURL: false,
-                offset: 50
-            });
-        </script>
-    </body>
+    <script src="js/bind-polyfill.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script>
+        smoothScroll.init({
+            speed: 750,
+            easing: 'easeInOutCubic',
+            updateURL: false,
+            offset: 50
+        });
+    </script>
+  </body>
 </html>
