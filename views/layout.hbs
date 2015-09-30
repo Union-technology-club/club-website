@@ -10,8 +10,10 @@
         <link rel="stylesheet" href="//cdn.jsdelivr.net/pure/0.6.0/base-min.css">
         <link rel="stylesheet" href="//cdn.jsdelivr.net/pure/0.6.0/grids-min.css">
         <link rel="stylesheet" href="//cdn.jsdelivr.net/pure/0.6.0/grids-responsive-min.css">
-        <link rel="stylesheet" href="//cdn.jsdelivr.net/pure/0.6.0/menus-min.css">
-        <link rel="stylesheet" href="/css/layouts/side-menu.css">
+
+        <!-- Customized menu CSS -->
+        <!-- Original source: http://tympanus.net/Tutorials/AnimatedBorderMenus/index5.html -->
+        <link rel="stylesheet" type="text/css" href="css/menu.css" />
 
         <!-- Font Awesome -->
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
@@ -23,18 +25,16 @@
         <title>{{title}}</title>
     </head>
     <body>
-        <div id="layout">
-            {{> sidebar}}
+        <div class="container">
+            {{> header}}
 
-            <div id="main">
-                {{#if error}}
-                    {{> notice}}
-                {{/if}}
+            {{#if error}}
+                {{> notice}}
+            {{/if}}
 
-                {{{body}}}
+            {{{body}}}
 
-                {{> footer}}
-            </div>
+            {{> navigation}}
         </div>
 
         <script src="js/bind-polyfill.js"></script>
@@ -47,6 +47,5 @@
                 offset: 50
             });
         </script>
-        <script src="/js/ui.js"></script>
     </body>
 </html>

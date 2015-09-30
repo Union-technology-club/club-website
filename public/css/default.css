@@ -3,99 +3,33 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
   margin: 0;
   padding: 0;
   border: 0;
-}
-#menu .pure-menu-selected, #menu .pure-menu-heading {
-  background-color: #467286;
-}
-.header h2 {
-  color: #6E91A1;
-}
-.header h1 {
   color: white;
 }
-.content-subhead {
-  color: white;
+html {
+  background-color: #27556c;
 }
-h2.content-subhead {
-  margin: 30px 0px 20px;
+header {
+  padding-bottom: 2em;
 }
-.ttc-center {
-  text-align: center;
-}
-.ttc-header {
-  background-color: #27556C;
-  padding-bottom: 0.25em;
-  border: none;
-}
-.ttc-subhead-link {
-  color: white;
-  text-decoration: none;
-}
-.ttc-subhead-link:hover {
-  color: white;
-  text-decoration: none;
-}
-.ttc-icons, .ttc-icons a {
-  display: inline-block;
-  letter-spacing: 0em;
-  margin-top: 1.5em;
-  color: white;
-  vertical-align: middle;
-}
-.fa-10x {
-  font-size: 10em;
-}
-.pure-form input:focus:invalid, .pure-form textarea:focus:invalid, .pure-form select:focus:invalid {
-  border-color: #D4A36A;
-  color: #AA7539;
-}
-.ttc-event {
-  padding: 0.25em;
-  background-color: #28794C;
-}
-.ttc-event-details {
-  color: white;
-}
-.ttc-event-font {
-  color: white;
-}
-.ttc-sponsors {
-  padding: 0.25em;
-  background-color: #313975;
-}
-.ttc-sponsors-map {
-  position: relative;
-  height: 0;
-  overflow: hidden;
-  padding-bottom: 56.25%;
-}
-.ttc-sponsors-map iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-.ttc-officer {
-  padding: 0.25em;
-  background-color: #27556C;
-  font-family: "Open Sans", sans-serif;
-}
-.ttc-officer-font {
-  color: white;
-}
-.ttc-officer-details {
-  color: white;
-  padding-bottom: .75em;
-}
-.ttc-officer-heading {
+header h1 {
   font-weight: 300;
-  padding-bottom: .25em;
+  font-size: 3em;
 }
-.ttc-contact {
-  padding: 0.25em;
-  background-color: #27556C;
+header h2 {
+  font-weight: 300;
+  font-size: 1.5em;
 }
-.ttc-contact-font {
-  color: white;
+.ttc-section-wrap {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 1em;
+}
+.ttc-h1 {
+  font-weight: 300;
+  font-size: 1.75em;
+}
+.ttc-footer-icon {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
