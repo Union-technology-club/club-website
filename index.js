@@ -36,6 +36,12 @@ var caldata = {
       date: "October 22",
       time: "7:30 PM",
       location: "DB 302"
+    },{
+      url: "https://www.google.com/calendar/event?eid=djUzanZ1bWhtb3Nxam1mNDEwbzdibDhjNzhfMjAxNTEwMzBUMDAzMDAwWiA1dWQ0ZGJpYTFxbDh0cGNxamVlcDlmZDc3a0Bn",
+      title: "Code Night",
+      date: "October 29",
+      time: "7:30 PM",
+      location: "DB 307"
     }
   ]
 }
