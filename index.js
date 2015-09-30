@@ -4,6 +4,42 @@ var express = require('express'),
     bodyParser = require('body-parser'),
     google = require('googleapis');
 
+var caldata = {
+  events: [
+    {
+      url: "https://www.google.com/calendar/event?eid=djUzanZ1bWhtb3Nxam1mNDEwbzdibDhjNzhfMjAxNTEwMDJUMDAzMDAwWiA1dWQ0ZGJpYTFxbDh0cGNxamVlcDlmZDc3a0Bn",
+      title: "Code Night",
+      date: "October 1",
+      time: "7:30 PM",
+      location: "DB 307"
+    },{
+      url: "https://www.google.com/calendar/event?eid=aW9qM3A1MzE2bXRwbmFrZWFxdDlwdTh2a3NfMjAxNTEwMDdUMDAzMDAwWiA1dWQ0ZGJpYTFxbDh0cGNxamVlcDlmZDc3a0Bn",
+      title: "Game Night",
+      date: "October 6",
+      time: "7:30 PM",
+      location: "DB 302"
+    },{
+      url: "https://www.google.com/calendar/event?eid=ZnZzYWJocjdkOTExMGEycmxwYzI2Ymd2ZzggNXVkNGRiaWExcWw4dHBjcWplZXA5ZmQ3N2tAZw",
+      title: "UI & Product Design Lecture",
+      date: "October 7",
+      time: "6:30 PM",
+      location: "DB 302"
+    },{
+      url: "https://www.google.com/calendar/event?eid=NXJhbDV1MXM1dWo3ZW5qMnVjaDgwM2xmY2dfMjAxNTEwMTRUMDAzMDAwWiA1dWQ0ZGJpYTFxbDh0cGNxamVlcDlmZDc3a0Bn",
+      title: "Code Night",
+      date: "October 13",
+      time: "7:30 PM",
+      location: "DB 307"
+    },{
+      url: "https://www.google.com/calendar/event?eid=NGRkOTk0ZDRoa29lMGhnM29zZ2tuMmlobThfMjAxNTEwMjNUMDAzMDAwWiA1dWQ0ZGJpYTFxbDh0cGNxamVlcDlmZDc3a0Bn",
+      title: "Game Night",
+      date: "October 22",
+      time: "7:30 PM",
+      location: "DB 302"
+    }
+  ]
+}
+
 // Initialize our express application
 var app = express();
 
@@ -28,7 +64,8 @@ app.use(bodyParser.urlencoded({
 
 app.get('/', function(req,res,next){
     res.render('index', {
-        title: 'Tech & Tabletop Club'
+        title: 'Tech & Tabletop Club',
+        events: caldata.events
     })
 });
 

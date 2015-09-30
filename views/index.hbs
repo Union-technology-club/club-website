@@ -1,6 +1,19 @@
 <div id="events" class="ttc-section-wrap">
   <h1 class="ttc-h1">Events</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at velit vel tellus ornare lobortis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed vitae lacus vitae urna dignissim consectetur. Nullam et dolor erat. Mauris ornare ex vitae tempor congue. Pellentesque dictum condimentum dictum. Ut ut luctus sapien. Sed eu imperdiet nisi. Fusce viverra porta felis, id elementum libero tempor eu. Nam porttitor, nunc eget ornare commodo, massa ex gravida orci, a vulputate nisi velit quis nisl. Vivamus dapibus est nec justo varius dignissim. Curabitur viverra ut nibh sit amet vehicula.</p>
+  <div class="pure-g ttc-events">
+    {{#each events}}
+      <div class="pure-u-1 pure-u-md-1-2">
+        <a href="{{url}}" target="_blank">
+          <h2 class="ttc-h2">{{title}}</h2>
+          <ul class="fa-ul">
+            <li><i class="fa-li fa fa-calendar"></i>{{date}}</li>
+            <li><i class="fa-li fa fa-clock-o"></i>{{time}}</li>
+            <li><i class="fa-li fa fa-map-marker"></i>{{location}}</li>
+          </ul>
+        </a>
+      </div>
+    {{/each}}
+  </div>
 </div>
 
 <div id="games" class="ttc-section-wrap">
