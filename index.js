@@ -49,10 +49,6 @@ var caldata = {
 // Initialize our express application
 var app = express();
 
-// Register Handlebars partials location
-hbsutils.registerPartials('./views/partials');
-hbsutils.registerWatchedPartials('./views/partials');
-
 // Set Handlebars as the engine for HTML and run it
 app.set('view engine', 'hbs');
 app.engine('html', hbs.__express);
@@ -71,6 +67,7 @@ app.use(bodyParser.urlencoded({
 app.get('/', function(req,res,next){
     res.render('index', {
         title: 'Tech & Tabletop Club',
+        location: 'Union College, Lincoln Nebraska',
         events: caldata.events
     })
 });

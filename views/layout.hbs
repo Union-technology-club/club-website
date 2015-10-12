@@ -35,17 +35,18 @@
       {{{body}}}
 
       {{> navigation}}
+      <script src="js/bind-polyfill.js"></script>
+      <script src="js/smooth-scroll.js"></script>
+      <script>
+          smoothScroll.init({
+              speed: 750,
+              easing: 'easeInOutCubic',
+              updateURL: true,
+              offset: 50
+          });
+      </script>
     </div>
 
-    <script src="js/bind-polyfill.js"></script>
-    <script src="js/smooth-scroll.js"></script>
-    <script>
-        smoothScroll.init({
-            speed: 750,
-            easing: 'easeInOutCubic',
-            updateURL: false,
-            offset: 50
-        });
-    </script>
+
   </body>
 </html>

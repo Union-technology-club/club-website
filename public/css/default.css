@@ -9,9 +9,9 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
    margin-left: auto;
    margin-right: auto;
    padding-top: 4em;
-   padding-left: 1em;
-   padding-right: 1em;
-   max-width: 768px;
+   padding-left: 90px;
+   padding-right: 90px;
+   max-width: 948px;
 }
 html {
   background-color: #27556c;
